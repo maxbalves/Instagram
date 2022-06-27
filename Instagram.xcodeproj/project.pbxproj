@@ -11,7 +11,6 @@
 		A15602F6268A019A89BB1F34 /* Pods_Instagram_InstagramUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D91169950D3C7DD7984FD75F /* Pods_Instagram_InstagramUITests.framework */; };
 		CD8829D0286A2FD900646DE5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CD8829CF286A2FD900646DE5 /* AppDelegate.m */; };
 		CD8829D3286A2FD900646DE5 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CD8829D2286A2FD900646DE5 /* SceneDelegate.m */; };
-		CD8829D6286A2FD900646DE5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD8829D5286A2FD900646DE5 /* ViewController.m */; };
 		CD8829D9286A2FD900646DE5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD8829D7286A2FD900646DE5 /* Main.storyboard */; };
 		CD8829DB286A2FD900646DE5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD8829DA286A2FD900646DE5 /* Assets.xcassets */; };
 		CD8829DE286A2FD900646DE5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD8829DC286A2FD900646DE5 /* LaunchScreen.storyboard */; };
@@ -20,6 +19,7 @@
 		CD8829F5286A2FDA00646DE5 /* InstagramUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = CD8829F4286A2FDA00646DE5 /* InstagramUITests.m */; };
 		CD8829F7286A2FDA00646DE5 /* InstagramUITestsLaunchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CD8829F6286A2FDA00646DE5 /* InstagramUITestsLaunchTests.m */; };
 		CD882A06286A475800646DE5 /* Keys.plist in Resources */ = {isa = PBXBuildFile; fileRef = CD882A05286A475800646DE5 /* Keys.plist */; };
+		CD882A0A286A4B2E00646DE5 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD882A09286A4B2E00646DE5 /* LoginViewController.m */; };
 		EE27022800ADA154985089FD /* Pods_InstagramTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E3AAC124CF8AAA34CBBAA07 /* Pods_InstagramTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -53,8 +53,6 @@
 		CD8829CF286A2FD900646DE5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		CD8829D1286A2FD900646DE5 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
 		CD8829D2286A2FD900646DE5 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
-		CD8829D4286A2FD900646DE5 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		CD8829D5286A2FD900646DE5 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		CD8829D8286A2FD900646DE5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CD8829DA286A2FD900646DE5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CD8829DD286A2FD900646DE5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -66,6 +64,8 @@
 		CD8829F4286A2FDA00646DE5 /* InstagramUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InstagramUITests.m; sourceTree = "<group>"; };
 		CD8829F6286A2FDA00646DE5 /* InstagramUITestsLaunchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InstagramUITestsLaunchTests.m; sourceTree = "<group>"; };
 		CD882A05286A475800646DE5 /* Keys.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Keys.plist; sourceTree = "<group>"; };
+		CD882A08286A4B2E00646DE5 /* LoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		CD882A09286A4B2E00646DE5 /* LoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		D91169950D3C7DD7984FD75F /* Pods_Instagram_InstagramUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Instagram_InstagramUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F772A067F0BCE3272D6FED89 /* Pods_Instagram.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Instagram.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -136,12 +136,11 @@
 		CD8829CD286A2FD900646DE5 /* Instagram */ = {
 			isa = PBXGroup;
 			children = (
+				CD882A07286A4B1A00646DE5 /* View Controllers */,
 				CD8829CE286A2FD900646DE5 /* AppDelegate.h */,
 				CD8829CF286A2FD900646DE5 /* AppDelegate.m */,
 				CD8829D1286A2FD900646DE5 /* SceneDelegate.h */,
 				CD8829D2286A2FD900646DE5 /* SceneDelegate.m */,
-				CD8829D4286A2FD900646DE5 /* ViewController.h */,
-				CD8829D5286A2FD900646DE5 /* ViewController.m */,
 				CD8829D7286A2FD900646DE5 /* Main.storyboard */,
 				CD8829DA286A2FD900646DE5 /* Assets.xcassets */,
 				CD8829DC286A2FD900646DE5 /* LaunchScreen.storyboard */,
@@ -167,6 +166,15 @@
 				CD8829F6286A2FDA00646DE5 /* InstagramUITestsLaunchTests.m */,
 			);
 			path = InstagramUITests;
+			sourceTree = "<group>";
+		};
+		CD882A07286A4B1A00646DE5 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				CD882A08286A4B2E00646DE5 /* LoginViewController.h */,
+				CD882A09286A4B2E00646DE5 /* LoginViewController.m */,
+			);
+			path = "View Controllers";
 			sourceTree = "<group>";
 		};
 		EFCFE78846572C7A07F53048 /* Frameworks */ = {
@@ -418,7 +426,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CD8829D6286A2FD900646DE5 /* ViewController.m in Sources */,
+				CD882A0A286A4B2E00646DE5 /* LoginViewController.m in Sources */,
 				CD8829D0286A2FD900646DE5 /* AppDelegate.m in Sources */,
 				CD8829E1286A2FD900646DE5 /* main.m in Sources */,
 				CD8829D3286A2FD900646DE5 /* SceneDelegate.m in Sources */,

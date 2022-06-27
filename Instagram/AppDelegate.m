@@ -22,12 +22,13 @@
     NSDictionary *dict = [NSDictionary dictionaryWithContentsOfFile: path];;
     NSString *clientKey = [dict objectForKey:@"clientKey"];
     NSString *applicationId = [dict objectForKey:@"applicationId"];
-
+    
     ParseClientConfiguration *config = [ParseClientConfiguration  configurationWithBlock:^(id<ParseMutableClientConfiguration> configuration) {
         configuration.applicationId = applicationId;
         configuration.clientKey = clientKey;
         configuration.server = @"https://parseapi.back4app.com";
     }];
+    
     [Parse initializeWithConfiguration:config];
     
     return YES;
