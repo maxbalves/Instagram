@@ -11,7 +11,7 @@
         <!--Login View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="LoginViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginViewController" id="BYZ-38-t0r" customClass="LoginViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -53,18 +53,21 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="smn-gb-dN8" firstAttribute="top" secondItem="h1f-X7-LvR" secondAttribute="bottom" constant="30" id="23B-B3-LQa"/>
+                            <constraint firstItem="sxh-QB-GWc" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" priority="500" constant="150" id="4b1-rD-O0H"/>
                             <constraint firstItem="bAK-Dz-RRd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="45" id="8gQ-4s-10h"/>
                             <constraint firstItem="h1f-X7-LvR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="45" id="HMH-Nz-jt1"/>
+                            <constraint firstItem="h1f-X7-LvR" firstAttribute="top" relation="lessThanOrEqual" secondItem="sxh-QB-GWc" secondAttribute="bottom" constant="81" id="I43-Ky-c4S"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="smn-gb-dN8" secondAttribute="trailing" constant="45" id="KNR-m5-XI3"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="sxh-QB-GWc" secondAttribute="trailing" constant="15" id="L9Z-7A-v3Q"/>
-                            <constraint firstItem="h1f-X7-LvR" firstAttribute="top" secondItem="sxh-QB-GWc" secondAttribute="bottom" constant="81" id="PyG-vH-J6G"/>
+                            <constraint firstItem="h1f-X7-LvR" firstAttribute="top" secondItem="sxh-QB-GWc" secondAttribute="bottom" priority="500" constant="81" id="PyG-vH-J6G"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="h1f-X7-LvR" secondAttribute="trailing" constant="45" id="Ylx-T1-44M"/>
                             <constraint firstItem="bAK-Dz-RRd" firstAttribute="top" secondItem="smn-gb-dN8" secondAttribute="bottom" constant="30" id="ZJf-Vg-NjW"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="bAK-Dz-RRd" secondAttribute="bottom" constant="15" id="cab-pt-tl7"/>
                             <constraint firstItem="smn-gb-dN8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="45" id="dal-fA-WuX"/>
                             <constraint firstItem="8fR-GG-Ha7" firstAttribute="top" secondItem="smn-gb-dN8" secondAttribute="bottom" constant="30" id="lei-IU-6be"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="8fR-GG-Ha7" secondAttribute="trailing" constant="45" id="nC8-cn-DFt"/>
                             <constraint firstItem="sxh-QB-GWc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="nUY-xZ-nvM"/>
-                            <constraint firstItem="sxh-QB-GWc" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="150" id="pmd-SA-V27"/>
+                            <constraint firstItem="sxh-QB-GWc" firstAttribute="top" relation="lessThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="150" id="pmd-SA-V27"/>
                         </constraints>
                     </view>
                     <connections>
@@ -80,14 +83,34 @@
         <!--Home Feed-->
         <scene sceneID="WsJ-0W-iP9">
             <objects>
-                <viewController id="8da-cn-xIH" sceneMemberID="viewController">
+                <viewController id="8da-cn-xIH" customClass="HomeViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="IcH-gx-Lw3">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="5mD-Dn-IXI"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Home Feed" id="n3r-qr-4ra"/>
+                    <navigationItem key="navigationItem" title="Home Feed" id="n3r-qr-4ra">
+                        <barButtonItem key="leftBarButtonItem" style="plain" id="Mx8-cK-7Cc">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="smv-aH-G7u">
+                                <rect key="frame" x="20" y="5" width="92" height="34.5"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Log Out"/>
+                                <connections>
+                                    <action selector="logoutUser:" destination="8da-cn-xIH" eventType="touchUpInside" id="fCf-6H-s4a"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="zF5-MP-Bpj">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="azF-Dj-pxt">
+                                <rect key="frame" x="302" y="2.5" width="92" height="39"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="insta_camera_btn"/>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hqZ-Sl-I0U" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -113,6 +136,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="insta_camera_btn" width="25" height="25"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
