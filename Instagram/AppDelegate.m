@@ -5,7 +5,11 @@
 //  Created by Max Bagatini Alves on 6/27/22.
 //
 
+// App Delegate
 #import "AppDelegate.h"
+
+// Frameworks
+@import Parse;
 
 @interface AppDelegate ()
 
@@ -13,9 +17,19 @@
 
 @implementation AppDelegate
 
-
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    NSString *path = [[NSBundle mainBundle] pathForResource: @"Keys" ofType: @"plist"];;
+    NSDictionary *dict = [NSDictionary dictionaryWithContentsOfFile: path];;
+    NSString *clientKey = [dict objectForKey:@"clientKey"];
+    NSString *applicationId = [dict objectForKey:@"applicationId"];
+
+    ParseClientConfiguration *config = [ParseClientConfiguration  configurationWithBlock:^(id<ParseMutableClientConfiguration> configuration) {
+        configuration.applicationId = applicationId;
+        configuration.clientKey = clientKey;
+        configuration.server = @"https://parseapi.back4app.com";
+    }];
+    [Parse initializeWithConfiguration:config];
+    
     return YES;
 }
 
