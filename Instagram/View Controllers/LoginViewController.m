@@ -104,9 +104,9 @@
 
 - (void) presentHome {
     UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
-    UINavigationController *navigationController = [storyboard instantiateViewControllerWithIdentifier:@"HomeNavigationController"];
+    UITabBarController *tabBarController = [storyboard instantiateViewControllerWithIdentifier:@"TabBarViewController"];
     SceneDelegate *mySceneDelegate = (SceneDelegate * ) UIApplication.sharedApplication.connectedScenes.allObjects.firstObject.delegate;
-    mySceneDelegate.window.rootViewController = navigationController;
+    mySceneDelegate.window.rootViewController = tabBarController;
 }
 
 @end

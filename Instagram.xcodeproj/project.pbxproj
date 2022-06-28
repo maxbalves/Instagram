@@ -24,6 +24,8 @@
 		CDFB5337286A5F6800964714 /* PostCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CDFB5336286A5F6800964714 /* PostCell.m */; };
 		CDFB533A286A603700964714 /* ComposeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDFB5339286A603700964714 /* ComposeViewController.m */; };
 		CDFB533E286A689200964714 /* Post.m in Sources */ = {isa = PBXBuildFile; fileRef = CDFB533D286A689200964714 /* Post.m */; };
+		CDFB5341286B7EFB00964714 /* DetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDFB5340286B7EFB00964714 /* DetailsViewController.m */; };
+		CDFB5345286B95D700964714 /* PostViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CDFB5344286B95D700964714 /* PostViewModel.m */; };
 		EE27022800ADA154985089FD /* Pods_InstagramTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E3AAC124CF8AAA34CBBAA07 /* Pods_InstagramTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -78,6 +80,10 @@
 		CDFB5339286A603700964714 /* ComposeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ComposeViewController.m; sourceTree = "<group>"; };
 		CDFB533C286A689200964714 /* Post.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Post.h; sourceTree = "<group>"; };
 		CDFB533D286A689200964714 /* Post.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Post.m; sourceTree = "<group>"; };
+		CDFB533F286B7EFB00964714 /* DetailsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailsViewController.h; sourceTree = "<group>"; };
+		CDFB5340286B7EFB00964714 /* DetailsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailsViewController.m; sourceTree = "<group>"; };
+		CDFB5343286B95D700964714 /* PostViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PostViewModel.h; sourceTree = "<group>"; };
+		CDFB5344286B95D700964714 /* PostViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PostViewModel.m; sourceTree = "<group>"; };
 		D91169950D3C7DD7984FD75F /* Pods_Instagram_InstagramUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Instagram_InstagramUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F772A067F0BCE3272D6FED89 /* Pods_Instagram.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Instagram.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -148,6 +154,7 @@
 		CD8829CD286A2FD900646DE5 /* Instagram */ = {
 			isa = PBXGroup;
 			children = (
+				CDFB5342286B95C300964714 /* View Models */,
 				CD882A07286A4B1A00646DE5 /* View Controllers */,
 				CDFB5334286A5F4C00964714 /* Views */,
 				CDFB533B286A687500964714 /* Models */,
@@ -191,6 +198,8 @@
 				CDFB5332286A50DA00964714 /* HomeViewController.m */,
 				CDFB5338286A603700964714 /* ComposeViewController.h */,
 				CDFB5339286A603700964714 /* ComposeViewController.m */,
+				CDFB533F286B7EFB00964714 /* DetailsViewController.h */,
+				CDFB5340286B7EFB00964714 /* DetailsViewController.m */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -211,6 +220,15 @@
 				CDFB533D286A689200964714 /* Post.m */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		CDFB5342286B95C300964714 /* View Models */ = {
+			isa = PBXGroup;
+			children = (
+				CDFB5343286B95D700964714 /* PostViewModel.h */,
+				CDFB5344286B95D700964714 /* PostViewModel.m */,
+			);
+			path = "View Models";
 			sourceTree = "<group>";
 		};
 		EFCFE78846572C7A07F53048 /* Frameworks */ = {
@@ -462,12 +480,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CDFB5345286B95D700964714 /* PostViewModel.m in Sources */,
 				CD882A0A286A4B2E00646DE5 /* LoginViewController.m in Sources */,
 				CD8829D0286A2FD900646DE5 /* AppDelegate.m in Sources */,
 				CD8829E1286A2FD900646DE5 /* main.m in Sources */,
 				CDFB5333286A50DA00964714 /* HomeViewController.m in Sources */,
 				CDFB533A286A603700964714 /* ComposeViewController.m in Sources */,
 				CD8829D3286A2FD900646DE5 /* SceneDelegate.m in Sources */,
+				CDFB5341286B7EFB00964714 /* DetailsViewController.m in Sources */,
 				CDFB5337286A5F6800964714 /* PostCell.m in Sources */,
 				CDFB533E286A689200964714 /* Post.m in Sources */,
 			);
