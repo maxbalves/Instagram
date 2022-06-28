@@ -17,6 +17,9 @@
 
 @interface HomeViewController ()
 
+@property (strong, nonatomic) IBOutlet UITableView *tableView;
+@property (strong, nonatomic) NSArray *arrayOfPhotos;
+
 @end
 
 @implementation HomeViewController

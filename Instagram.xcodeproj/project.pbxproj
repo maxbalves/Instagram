@@ -21,6 +21,9 @@
 		CD882A06286A475800646DE5 /* Keys.plist in Resources */ = {isa = PBXBuildFile; fileRef = CD882A05286A475800646DE5 /* Keys.plist */; };
 		CD882A0A286A4B2E00646DE5 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD882A09286A4B2E00646DE5 /* LoginViewController.m */; };
 		CDFB5333286A50DA00964714 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDFB5332286A50DA00964714 /* HomeViewController.m */; };
+		CDFB5337286A5F6800964714 /* PostCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CDFB5336286A5F6800964714 /* PostCell.m */; };
+		CDFB533A286A603700964714 /* ComposeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDFB5339286A603700964714 /* ComposeViewController.m */; };
+		CDFB533E286A689200964714 /* Post.m in Sources */ = {isa = PBXBuildFile; fileRef = CDFB533D286A689200964714 /* Post.m */; };
 		EE27022800ADA154985089FD /* Pods_InstagramTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E3AAC124CF8AAA34CBBAA07 /* Pods_InstagramTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -69,6 +72,12 @@
 		CD882A09286A4B2E00646DE5 /* LoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		CDFB5331286A50DA00964714 /* HomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
 		CDFB5332286A50DA00964714 /* HomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		CDFB5335286A5F6800964714 /* PostCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PostCell.h; sourceTree = "<group>"; };
+		CDFB5336286A5F6800964714 /* PostCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PostCell.m; sourceTree = "<group>"; };
+		CDFB5338286A603700964714 /* ComposeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ComposeViewController.h; sourceTree = "<group>"; };
+		CDFB5339286A603700964714 /* ComposeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ComposeViewController.m; sourceTree = "<group>"; };
+		CDFB533C286A689200964714 /* Post.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Post.h; sourceTree = "<group>"; };
+		CDFB533D286A689200964714 /* Post.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Post.m; sourceTree = "<group>"; };
 		D91169950D3C7DD7984FD75F /* Pods_Instagram_InstagramUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Instagram_InstagramUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F772A067F0BCE3272D6FED89 /* Pods_Instagram.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Instagram.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -140,6 +149,8 @@
 			isa = PBXGroup;
 			children = (
 				CD882A07286A4B1A00646DE5 /* View Controllers */,
+				CDFB5334286A5F4C00964714 /* Views */,
+				CDFB533B286A687500964714 /* Models */,
 				CD8829CE286A2FD900646DE5 /* AppDelegate.h */,
 				CD8829CF286A2FD900646DE5 /* AppDelegate.m */,
 				CD8829D1286A2FD900646DE5 /* SceneDelegate.h */,
@@ -178,8 +189,28 @@
 				CD882A09286A4B2E00646DE5 /* LoginViewController.m */,
 				CDFB5331286A50DA00964714 /* HomeViewController.h */,
 				CDFB5332286A50DA00964714 /* HomeViewController.m */,
+				CDFB5338286A603700964714 /* ComposeViewController.h */,
+				CDFB5339286A603700964714 /* ComposeViewController.m */,
 			);
 			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		CDFB5334286A5F4C00964714 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CDFB5335286A5F6800964714 /* PostCell.h */,
+				CDFB5336286A5F6800964714 /* PostCell.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		CDFB533B286A687500964714 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CDFB533C286A689200964714 /* Post.h */,
+				CDFB533D286A689200964714 /* Post.m */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		EFCFE78846572C7A07F53048 /* Frameworks */ = {
@@ -435,7 +466,10 @@
 				CD8829D0286A2FD900646DE5 /* AppDelegate.m in Sources */,
 				CD8829E1286A2FD900646DE5 /* main.m in Sources */,
 				CDFB5333286A50DA00964714 /* HomeViewController.m in Sources */,
+				CDFB533A286A603700964714 /* ComposeViewController.m in Sources */,
 				CD8829D3286A2FD900646DE5 /* SceneDelegate.m in Sources */,
+				CDFB5337286A5F6800964714 /* PostCell.m in Sources */,
+				CDFB533E286A689200964714 /* Post.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
