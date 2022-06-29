@@ -5,8 +5,14 @@
 //  Created by Max Bagatini Alves on 6/27/22.
 //
 
+// Views
 #import "PostCell.h"
+
+// View Models
 #import "PostViewModel.h"
+
+// Frameworks
+#import "UIImageView+AFNetworking.h"
 
 @implementation PostCell
 
@@ -17,9 +23,9 @@
 
 - (void) setPostVM:(PostViewModel *)postVM {
     _postVM = postVM;
-    self.profilePicture.image = postVM.profilePicture;
+    [self.profilePicture setImageWithURL:postVM.profilePictureUrl];
     self.username.text = postVM.username;
-    self.postImage.image = postVM.postImage;
+    [self.postImage setImageWithURL:postVM.postImageUrl];
     self.caption.text = postVM.caption;
     self.date.text = postVM.date;
     self.likesLabel.text = postVM.likesLabel;

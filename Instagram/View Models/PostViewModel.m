@@ -5,6 +5,9 @@
 //  Created by Max Bagatini Alves on 6/28/22.
 //
 
+// Frameworks
+#import "UIImageView+AFNetworking.h"
+
 // Models
 #import "Post.h"
 
@@ -20,7 +23,7 @@
     _post = post;
     
     // TODO: Implement Profile Pictures
-     _profilePicture = nil;
+     _profilePictureUrl = nil;
     _username = post.author.username;
 
     /*
@@ -28,7 +31,7 @@
      */
     
     // TODO: AFNetworking or Delegate Cell
-    _postImage = [UIImage imageWithData:[post.image getData]];
+    _postImageUrl = [NSURL URLWithString:post.image.url];
     
     _caption = post.caption;
     _likesLabel = [NSString stringWithFormat:@"%@ likes", post.likeCount];

@@ -24,11 +24,11 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (strong, nonatomic) Post *post;
 
-@property (strong, nonatomic, nullable) UIImage *profilePicture;
+@property (strong, nonatomic, nullable) NSURL *profilePictureUrl;
 
 @property (strong, nonatomic) NSString *username;
 
-@property (strong, nonatomic) UIImage *postImage;
+@property (strong, nonatomic) NSURL *postImageUrl;
 
 @property (strong, nonatomic) NSString *caption;
 

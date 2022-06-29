@@ -39,7 +39,7 @@
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
     
-    self.MAX_POSTS_SHOWN = 20;
+    self.MAX_POSTS_SHOWN = 6;
     
     self.refreshControl = [UIRefreshControl new];
     
@@ -86,7 +86,7 @@
 
 - (void) tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath {
     if (indexPath.row + 1 == self.arrayOfPostVMs.count && self.arrayOfPostVMs.count == self.MAX_POSTS_SHOWN) {
-        self.MAX_POSTS_SHOWN += 20;
+        self.MAX_POSTS_SHOWN += 3;
         
         [self refreshFeed:self.refreshControl];
     }

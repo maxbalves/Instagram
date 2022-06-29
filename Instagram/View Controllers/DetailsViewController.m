@@ -11,6 +11,9 @@
 // View Models
 #import "PostViewModel.h"
 
+// Frameworks
+#import "UIImageView+AFNetworking.h"
+
 @interface DetailsViewController ()
 
 @property (strong, nonatomic) IBOutlet UILabel *username;
@@ -27,9 +30,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.profilePicture.image = self.postVM.profilePicture;
+    [self.profilePicture setImageWithURL:self.postVM.profilePictureUrl];
     self.username.text = self.postVM.username;
-    self.postImage.image = self.postVM.postImage;
+    [self.postImage setImageWithURL:self.postVM.postImageUrl];
     self.caption.text = self.postVM.caption;
     self.date.text = self.postVM.date;
     self.likeLabel.text = self.postVM.likesLabel;
