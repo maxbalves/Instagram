@@ -9,6 +9,7 @@
 #import "DetailsViewController.h"
 #import "HomeViewController.h"
 #import "LoginViewController.h"
+#import "ProfileViewController.h"
 
 // Frameworks
 @import Parse;
@@ -108,6 +109,14 @@
         DetailsViewController *detailsController = [segue destinationViewController];
         detailsController.postVM = self.arrayOfPostVMs[[self.tableView indexPathForCell:sender].row];
     }
+}
+
+- (void) showProfile:(PFUser *)user {
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    ProfileViewController *profileVC = [storyboard instantiateViewControllerWithIdentifier:@"ProfileViewController"];
+    profileVC.user = user;
+    SceneDelegate *mySceneDelegate = (SceneDelegate * ) UIApplication.sharedApplication.connectedScenes.allObjects.firstObject.delegate;
+    mySceneDelegate.window.rootViewController = profileVC;
 }
 
 @end

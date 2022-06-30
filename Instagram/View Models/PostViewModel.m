@@ -22,15 +22,11 @@
     
     _post = post;
     
-    // TODO: Implement Profile Pictures
-     _profilePictureUrl = nil;
-    _username = post.author.username;
-
-    /*
-     @property (strong, nonatomic) UIImage *profilePicture;
-     */
+    PFFileObject *profilePic = [post.author valueForKey:@"profilePicture"];
+    _profilePictureUrl = [NSURL URLWithString:profilePic.url];
     
-    // TODO: AFNetworking or Delegate Cell
+    _username = post.author.username;
+    
     _postImageUrl = [NSURL URLWithString:post.image.url];
     
     _caption = post.caption;

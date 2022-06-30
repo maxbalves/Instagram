@@ -5,11 +5,12 @@
 //  Created by Max Bagatini Alves on 6/28/22.
 //
 
-// View Controllers
-#import "DetailsViewController.h"
-
 // View Models
 #import "PostViewModel.h"
+
+// View Controllers
+#import "DetailsViewController.h"
+#import "ProfileViewController.h"
 
 // Frameworks
 #import "UIImageView+AFNetworking.h"
@@ -37,5 +38,12 @@
     self.date.text = self.postVM.date;
     self.likeLabel.text = self.postVM.likesLabel;
 }
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    ProfileViewController *profileVC = [segue destinationViewController];
+    profileVC.user = self.postVM.post.author;
+
+}
+
 
 @end

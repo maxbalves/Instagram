@@ -21,6 +21,7 @@
 		CD882A06286A475800646DE5 /* Keys.plist in Resources */ = {isa = PBXBuildFile; fileRef = CD882A05286A475800646DE5 /* Keys.plist */; };
 		CD882A0A286A4B2E00646DE5 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD882A09286A4B2E00646DE5 /* LoginViewController.m */; };
 		CDD82EE8286CBA1400A451A5 /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDD82EE7286CBA1400A451A5 /* ProfileViewController.m */; };
+		CDD82F36286E3E3400A451A5 /* PostCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CDD82F35286E3E3400A451A5 /* PostCollectionViewCell.m */; };
 		CDFB5333286A50DA00964714 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDFB5332286A50DA00964714 /* HomeViewController.m */; };
 		CDFB5337286A5F6800964714 /* PostCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CDFB5336286A5F6800964714 /* PostCell.m */; };
 		CDFB533A286A603700964714 /* ComposeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDFB5339286A603700964714 /* ComposeViewController.m */; };
@@ -75,6 +76,8 @@
 		CD882A09286A4B2E00646DE5 /* LoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		CDD82EE6286CBA1400A451A5 /* ProfileViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProfileViewController.h; sourceTree = "<group>"; };
 		CDD82EE7286CBA1400A451A5 /* ProfileViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProfileViewController.m; sourceTree = "<group>"; };
+		CDD82F34286E3E3400A451A5 /* PostCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PostCollectionViewCell.h; sourceTree = "<group>"; };
+		CDD82F35286E3E3400A451A5 /* PostCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PostCollectionViewCell.m; sourceTree = "<group>"; };
 		CDFB5331286A50DA00964714 /* HomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
 		CDFB5332286A50DA00964714 /* HomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
 		CDFB5335286A5F6800964714 /* PostCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PostCell.h; sourceTree = "<group>"; };
@@ -214,6 +217,8 @@
 			children = (
 				CDFB5335286A5F6800964714 /* PostCell.h */,
 				CDFB5336286A5F6800964714 /* PostCell.m */,
+				CDD82F34286E3E3400A451A5 /* PostCollectionViewCell.h */,
+				CDD82F35286E3E3400A451A5 /* PostCollectionViewCell.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -493,6 +498,7 @@
 				CDFB533A286A603700964714 /* ComposeViewController.m in Sources */,
 				CD8829D3286A2FD900646DE5 /* SceneDelegate.m in Sources */,
 				CDFB5341286B7EFB00964714 /* DetailsViewController.m in Sources */,
+				CDD82F36286E3E3400A451A5 /* PostCollectionViewCell.m in Sources */,
 				CDD82EE8286CBA1400A451A5 /* ProfileViewController.m in Sources */,
 				CDFB5337286A5F6800964714 /* PostCell.m in Sources */,
 				CDFB533E286A689200964714 /* Post.m in Sources */,
