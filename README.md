@@ -21,7 +21,7 @@ The following **optional** features are implemented:
 - [x] Run your app on your phone and use the camera to take the photo
 - [x] User can load more posts once he or she reaches the bottom of the feed using infinite scrolling
 - [x] Show the username and creation time for each post
-- [ ] User can use a Tab Bar to switch between a Home Feed tab (all posts) and a Profile tab (only posts published by the current user)
+- [x] User can use a Tab Bar to switch between a Home Feed tab (all posts) and a Profile tab (only posts published by the current user)
 - User Profiles:
   - [ ] Allow the logged in user to add a profile photo
   - [ ] Display the profile photo with each post
@@ -46,7 +46,7 @@ Please list two areas of the assignment you'd like to **discuss further with you
 
 Here's a walkthrough of implemented user stories:
 
-<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='https://github.com/maxbalves/Instagram/blob/main/demo.gif' title='Video Walkthrough' width='250px' alt='Video Walkthrough' />
 
 GIF created with [Kap](https://getkap.co/).
 
